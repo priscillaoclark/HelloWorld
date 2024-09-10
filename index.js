@@ -2,12 +2,10 @@
 const button = document.createElement('button');
 
 // Set the button text
-button.innerText = 'Click me';
+button.innerText = 'What is the date?';
 
 // Add a click event listener to the button
 button.addEventListener('click', () => {
-    // Generate an alert when the button is clicked
-    alert('Button clicked!');
     // Get the current date
     const currentDate = new Date();
 
@@ -15,7 +13,7 @@ button.addEventListener('click', () => {
     const h1 = document.createElement('h1');
 
     // Set the h1 text to include the current date
-    h1.innerText = `Hello Priscilla! Today's date is ${currentDate.toDateString()}`;
+    h1.innerText = `Today's date is ${currentDate.toDateString()}`;
 
     // Append the h1 element to the body of the HTML document
     document.body.appendChild(h1);
